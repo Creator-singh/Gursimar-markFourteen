@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock 📈 | 📉</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        
+    <header class="header">
+        <img class="header-image" src="images/Stock_prices.svg">
+        <h1 class="header-heading">Stock Profit📈 | Loss📉</h1>
+    </header>
+    <div class="container">
+        <label for="initial-price">Initial Price </label>
+        <input placeholder=" Add Initial Price" type="number" id="initial-price">
+
+        <label for="quantity">Quantity </label>
+        <input placeholder="Add Quantity" type="number" id="quantity">
+
+        <label for="current-price">Current Price </label>
+        <input placeholder="Add Current Price" type="number" id="current-price">
+
+        <button id="submit">Submit</button>
+
+        <div id="output"></div>
     </div>
 </body>
+<script src="/app.js"></script>
 </html>
